@@ -8,8 +8,8 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <h1>AplicaciÃ³n web con MVC bÃ¡sica</h1>
-        <form action="horoscopo" method="post">
+        <h1>Aplicación web con MVC básica</h1>
+        <form action="horoscopo" method="get">
             <p>Escribe tu Nombre</p>
             <input type="text" name="nombre"/><br>
             <select name="Signo">
