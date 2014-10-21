@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="js/libs/twitter-bootstrap/css/bootstrap.css"/>
+        <link rel="stylesheet" href="js/libs/twitter-bootstrap/css/bootstrap-theme.css"/>
+        <script src="js/libs/jquery/jquery.js"></script>
+        <script src="js/libs/twitter-bootstrap/js/bootstrap.js"></script>
+        <script src="js/nomina.js"></script>
+    </head>
+    <body>
+        <!-- Encabezado -->
+        <div class='navbar navbar-inverse'>
+            <a class="navbar-brand">Proyecto Parcial</a>
+        </div>
+ <!-- Los tabas de navegacion, deber coincidir los href con oos id's respectivos de navegacion -->
+<ul class="nav nav-tabs" role="tablist">
+  <li class="active"><a href="#inicio" role="tab" data-toggle="tab">Inicio</a></li>
+  <li><a href="#trabajadores" role="tab" data-toggle="tab">Trabajadores</a></li>
+  <li><a href="#nominas" role="tab" data-toggle="tab">Nominas</a></li>
+  <li><a href="#reportes" role="tab" data-toggle="tab">Reportes</a></li>
+</ul>
+
+<!-- Paneles, aqui debend e aparecer los d'que referencian los hrefs de los tabas -->
+<div class="tab-content">
+    <!-- Inicia tab inicio -->
+    <div class="tab-pane active" id="inicio">
+        <div class="tab-content">
+            <div class="panel">
+                <div class="panel-title">Inicio</div>
+                <div class="panel-body">
+                    <input class="form-control" id="tu-nombre"/>
+                    <span class="input-group-btn">
+                    <span class="btn btn-success" id="botoncito">gatonejo</span>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+  <div class="tab-pane" id="trabajadores">Trabajadores</div>
+  <div class="tab-pane" id="nominas">Nominas</div>
+  <div class="tab-pane" id="reportes">Reportes</div>
+</div>
+<script>
+    $(document).ready(function(){
+        $("#botoncito").click(function(){
+            alert("hola "+$("#tu-nombre").val());
+        });
+    });
+</script>
+    </body>
+</html>
+

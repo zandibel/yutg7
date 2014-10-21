@@ -19,10 +19,6 @@ public class Nomina {
     public Nomina(Trabajador t) {
         this.t = t;
     }
-    public float pagarNomina(){
-        
-        float pago=t.getHorasLaboradas()*t.getSueldoBase();
-        return pago;
-    }
+  
     
 }
