@@ -18,8 +18,10 @@ public class ServicioSuperficie {
     public ServicioSuperficie(Superficie suferfice) {
         this.superficie = superficie;
     }
+    
     public String servicioArea(){
-        
-        return superficie.calcularArea();
+        Cuadrado d=new Cuadrado();
+        d.setLado(5);
+        return d.calcularArea();
     }
 }
