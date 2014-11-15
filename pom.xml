@@ -43,6 +43,13 @@
         <artifactId>spring-webmvc</artifactId>
         <version>4.1.1.RELEASE</version>
  </dependency>
+ 
+ <dependency>
+     <groupId>org.codehaus.jackson</groupId>
+     <artifactId>jackson-mapper-asl</artifactId>
+     <version>1.9.13</version>
+     <type>jar</type>
+ </dependency>
   </dependencies>
 
   <build>

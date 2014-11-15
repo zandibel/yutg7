@@ -5,6 +5,8 @@
  */
 package com.jc.elementos.controller;
 
+import java.io.IOException;
+import org.codehaus.jackson.map.ObjectMapper;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -18,5 +20,13 @@ public class ControladorHola {
     @RequestMapping(value="/hola", method=RequestMethod.GET, headers={"Accept=text/html"})
     public @ResponseBody String holaConGet(){
         return "Este es mi primer controller con un get";
+    }
+    //Crear un método get para los usuarios que me devuelva TODOSSS
+    
+    @RequestMapping(value="/usuario", method=RequestMethod.GET, headers={"Accept=Application/json"})
+    public @ResponseBody String obtenerTodos()throws IOException{
+        //Vamos a usar la implementación json para java fasterxml o codehouse
+        ObjectMapper mapper=new ObjectMapper();
+        return mapper.writeValueAsString(GenerarUsuarios.obtenerUsuarios());
     }
 }
