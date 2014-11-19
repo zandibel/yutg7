@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @Controller
 @RequestMapping("/")
 public class ControladorHola {
-
+/*
     //primero hacemos el get
     @RequestMapping(value="/hola", method=RequestMethod.GET, headers={"Accept=text/html"})
     public @ResponseBody String holaConGet(){
@@ -28,5 +28,5 @@ public class ControladorHola {
         //Vamos a usar la implementación json para java fasterxml o codehouse
         ObjectMapper mapper=new ObjectMapper();
         return mapper.writeValueAsString(GenerarUsuarios.obtenerUsuarios());
-    }
+    }*/
 }
